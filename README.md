@@ -1,12 +1,32 @@
-# React + Vite
+# CRediT Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A react app to quickly assign credit to contributors by using the **[Contributor Role Taxonomy (CRediT)](https://credit.niso.org/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add authors and assign CRediT roles
+- Change author order / remove authors
+- Neatly formatted output
+
+---
+
+## Why?
+
+- I couldn't find a simple tool to generate CRediT contribution statements, so I made my own.
+- I've always been curious about how people make interactive apps.
+- It's fun to learn new things by doing.
+
+---
+
+## 🛠 Usage
+
+The app is still a work in progress, but you can try it here: [https://credit-generator-phi.vercel.app](https://credit-generator-phi.vercel.app)
+
+---
+
+## See Also
+
+An [alternative CRediT Generator app](https://github.com/IPHYS-Bioinformatics/CRediT-Generator) which supports XML and JSON input/output
