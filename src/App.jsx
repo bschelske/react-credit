@@ -96,6 +96,8 @@ function App() {
   return (
     <>
       <h1>Contributor Role Taxonomy (CRediT) Generator</h1>
+      <h3>Instructions</h3>
+      <p>Enter the names of contributors, then click on their names to assign roles.</p>
       <p><a href="https://credit.niso.org/" target="_blank" rel="noopener noreferrer">What is CRediT?</a></p>
       <div className="container">
         <div className="app-container">
@@ -103,7 +105,7 @@ function App() {
             <h3>Contributors</h3>
             <div className="name-input">
               <div className='name'>
-                <input
+                <input className='name-input-field'
                   type="text"
                   placeholder="Enter contributor's name"
                   value={newName}
@@ -114,7 +116,7 @@ function App() {
                     }
                   }}
                 />
-                <button className='add-button' onClick={addName}>Add Name</button>
+                <button className='add-button' onClick={addName}>Add Author</button>
               </div>
 
               <ol>

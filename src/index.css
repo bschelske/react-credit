@@ -55,12 +55,10 @@ h3 {
 
 .app-container {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  text-align: center;
-  max-width: 1200px;
   padding: 0.5em 1em;
   background-color: #ffffff;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .name {
@@ -76,6 +74,36 @@ input {
   font-family: inherit;
 }
 
+.name-input-field {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #ffffff;
+  color: #000000;
+  align-self: stretch;
+  max-height: 50px;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #e5e7eb;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  flex: 2;
+  max-height: 31px;
+}
+
 ol {
   display: flex;
   flex-direction: column;
@@ -84,7 +112,6 @@ ol {
   margin: 0;
   padding: 0;
   list-style: decimal inside;
-  padding-left: 1em;
   text-align: left;
   gap: 0.5rem;
 }
@@ -104,10 +131,11 @@ li {
 }
 
 .name-section {
-  margin: 0;
-  height: auto;
-  box-sizing: border-box;
-  flex: 1;
+  flex: 1 1 40%;
+}
+
+.roles-section {
+  flex: 1 1 45%;
 }
 
 .name-input {
@@ -130,34 +158,14 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  max-width: 600px;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 .role-button.selected {
   background-color: #2563eb;
   color: white;
   border-color: #1d4ed8;
-}
-
-
-.add-button {
-  display: flex;
-  justify-content: center;
-  margin-left: 0;
-  padding: 0;
-  font-size: 1.2em;
-  font-weight: 400;
-  font-family: inherit;
-  background-color: #e5e7eb;
-  border: 1px solid #444;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  flex: 1;
-  max-height: 31px;
 }
 
 .name-item-controls {
@@ -213,6 +221,10 @@ li {
   flex-basis: 45%;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.87);
+  flex: 1 1 calc(50% - 0.5rem);
+  /* 50% minus half the gap on each side */
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 button {
@@ -270,5 +282,74 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #1a1a1a;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  .app-container {
+    background-color: #1a1a1a;
+  }
+
+  .container {
+    border-color: #666;
+  }
+
+  .name-input {
+    background-color: #2a2a2a;
+    color: rgba(255, 255, 255, 0.87);
+    border-color: #666;
+  }
+
+  li {
+    border-color: #666;
+  }
+
+  .add-button,
+  .remove-button,
+  .move-button {
+    background-color: #333;
+    border-color: #666;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .role-button {
+    background-color: #333;
+    border-color: #666;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .role-button.selected {
+    background-color: #2563eb;
+    color: white;
+    border-color: #1d4ed8;
+  }
+
+  button {
+    background-color: #333;
+    border-color: #666;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  button:hover {
+    border-color: #646cff;
+  }
+
+  .output {
+    background-color: #2a2a2a;
+    color: rgba(255, 255, 255, 0.87);
+    border-color: #666;
+  }
+
+  .footer {
+    color: #aaa;
   }
 }
