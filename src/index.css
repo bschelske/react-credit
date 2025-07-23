@@ -250,6 +250,14 @@ button:focus-visible {
   background-color: #f9f9f9;
 }
 
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
