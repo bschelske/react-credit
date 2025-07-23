@@ -203,12 +203,30 @@ function App() {
       </div >
 
       <div className="footer">
-        <p>This tool incorporates content from the Contributor Role Taxonomy (CRediT), which is © NISO and licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International (CC BY 4.0).</a></p>
-        <p>Please see also the <a href="https://credit.metabolomics.fgu.cas.cz/" target="_blank" rel="noopener noreferrer">CRediT Generator app created by IPHYS-Bioinformatics</a>, which supports XML and JSON input/output.</p>
         <p>
-          Built by <a href="https://benschelske.com/?utm_source=credit-generator&utm_medium=footer&utm_campaign=credit" target="_blank" rel="noopener noreferrer">Ben Schelske</a> with source code available on <a href="https://github.com/bschelske/react-credit" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          This tool incorporates content from the Contributor Role Taxonomy (CRediT), which is © NISO and licensed under{' '}
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+            Creative Commons Attribution 4.0 International (CC BY 4.0)
+          </a>.
+        </p>
+        <p>
+          Also see the{' '}
+          <a href="https://credit.metabolomics.fgu.cas.cz/" target="_blank" rel="noopener noreferrer">
+            CRediT Generator app by IPHYS-Bioinformatics
+          </a>, which supports XML and JSON input/output.
+        </p>
+        <p>
+          Built by{' '}
+          <a href="https://benschelske.com/?utm_source=credit-generator&utm_medium=footer&utm_campaign=credit" target="_blank" rel="noopener noreferrer">
+            Ben Schelske, 2025
+          </a>{' '}
+          · Source on{' '}
+          <a href="https://github.com/bschelske/react-credit" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>.
         </p>
       </div>
+
     </>
   );
 }
