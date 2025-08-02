@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import { ArrowUp, ArrowDown, X } from 'lucide-react';
 import './App.css'
 
 function App() {
-  const [names, setNames] = useState(['Alice', 'Bob']);
+  const [names, setNames] = useState(['First Author', 'Second Author']);
   const [newName, setNewName] = useState('');
   const [selectedName, setSelectedName] = useState('');
 
   // This object will store roles for each name
   const [nameRoles, setNameRoles] = useState({
-    'Alice': ['Conceptualization', 'Writing – original draft'],
-    'Bob': ['Data curation'],
+    'First Author': ['Conceptualization', 'Writing – original draft'],
+    'Second Author': ['Data curation'],
   });
 
   function moveNameUp(index) {
@@ -116,7 +117,7 @@ function App() {
                     }
                   }}
                 />
-                <button className='add-button' onClick={addName}>Add Author</button>
+                <button className='add-button' onClick={addName}>Add</button>
               </div>
 
               <ol>
@@ -143,16 +144,17 @@ function App() {
                       <button
                         className='move-button'
                         onClick={() => moveNameUp(index)}
-                      >⬆️
+                      ><ArrowUp size={24} strokeWidth={2} />
                       </button>
                       <button
                         className='move-button'
                         onClick={() => moveNameDown(index)}
-                      >⬇️
+                      >
+                        <ArrowDown size={24} strokeWidth={2} />
                       </button>
                       <button
                         className='remove-button'
-                        onClick={() => removeName(index)}>❌
+                        onClick={() => removeName(index)}><X size={24} strokeWidth={2} />
                       </button>
                     </div>
                   </li>
