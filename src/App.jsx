@@ -97,9 +97,9 @@ function App() {
   return (
     <>
       <h1>Contributor Role Taxonomy (CRediT) Generator</h1>
+      <p>A simple tool to quickly create CRediT contribution statements for academic papers. <br /> <a href="https://credit.niso.org/" target="_blank" rel="noopener noreferrer">What is CRediT?</a></p>
       <h3>Instructions</h3>
-      <p>Enter the names of contributors, then click on their names to assign roles.</p>
-      <p><a href="https://credit.niso.org/" target="_blank" rel="noopener noreferrer">What is CRediT?</a></p>
+      <p>Enter the names of contributors, then click on each name to assign roles.</p>
       <div className="container">
         <div className="app-container">
           <div className='name-section'>
